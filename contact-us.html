@@ -5,15 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberSmithSECURE | Art of Cyber Security, Perfected</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+        .custom-style {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-radius: 10px 0 10px 0;
+            /* Optional: Exact background color if you need it */
+            background-color: rgb(16, 16, 16) !important;
+        }
+    </style>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script>
+        function enableSubmit(){
+            document.getElementById("submitBtn").disabled=false;
+        }
+    </script>
     <!-- Styles -->
     <link rel="stylesheet" href="app/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="app/dist/app.css">
     <link rel="stylesheet" href="app/dist/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./CSS_new/css/bootstrap-icons.min.css">
+
     <link href="app/dist/aos.css" rel="stylesheet">
-    <!-- end Styles -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/outline.png">
@@ -26,8 +43,7 @@
     <header id="header_main" class="header" style="color: #fff;">
         <div class="container" >
             <div class="row" >
-                <div class="col-12" >
-                    <a href="contact-us" ><span><strong>Under Attack?</strong></span></a>
+                <div class="col-12" ><button class="underBtn"><a href="./contact-us.html"><span><strong>Under Attack?</strong></span></a></button>
                 </div>
             </div>
         </div>
@@ -59,7 +75,9 @@
                                             <a href="#">Blog </a>
                                         </li>
                                                             
-                                        
+                                        <li class="menu-item">
+                                            <a href="./CSS_new/FSVI.html">FSVI </a>
+                                        </li> 
                                     </ul>
                                 </nav>                            
                                 <div class="mobile-button"><span></span></div>
@@ -85,21 +103,12 @@
           <p class="max-w-[42rem] leading-normal text-[#a09faf] sm:text-xl sm:leading-8">
             Unlock the Power of Clarity! Discover how our Continual Cyber Resilience as a Service Program empowers executives to effortlessly articulate security concerns to the board. Take a step towards streamlined communication and fortified cybersecurity.
           </p>
-          <div class="space-x-4 py-3">
-            <a class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background text-primary-foreground hover:bg-[#fff]/90 h-11 px-8 rounded-md text-[#000] bg-[#fff]" href="mailto:contact@cybersmithsecure.com">Mail us</a>            <div>
-              <br />
-              <br />
-              <h3 class="font-heading text-3xl sm:text-2xl md:text-3xl lg:text-4xl py-8" style="font-family:'Russo One', sans-serif;">
-                Are you under attack?
-                <br />
-                <span class="text-2xl text-[#a09faf]">Just fill out the required information in the form.</span>
-              </h3>
-            </div>
-                     </div>
+          <a class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background text-primary-foreground hover:bg-[#fff]/90 h-11 px-8 rounded-md text-[#000] bg-[#fff]" href="mailto:contact@cybersmithsecure.com">Mail us</a> <div></div>
+        </div>
         </div>
         <div class="md:w-1/2 border-none">
 
-          <div id="zf_div_sI73mm7PUx2Tu38Zc-qB62UxyrNj5F9zhiWxkMcXrXU"></div><script type="text/javascript">(function() {
+          <!-- <div id="zf_div_sI73mm7PUx2Tu38Zc-qB62UxyrNj5F9zhiWxkMcXrXU"></div><script type="text/javascript">(function() {
             try{
             var f = document.createElement("iframe");
             f.src = 'https://forms.zohopublic.in/teamvikasana/form/ContactUsPage/formperma/sI73mm7PUx2Tu38Zc-qB62UxyrNj5F9zhiWxkMcXrXU?zf_rszfm=1';
@@ -130,6 +139,66 @@
             }, false);
             }catch(e){}
             })();</script>
+        </div> -->
+        <div class="mb-3">
+            <div class="space-x-4 py-3">
+                
+                  <br />
+                  <br />
+                  <h3 class="font-heading text-3xl sm:text-2xl md:text-3xl lg:text-4xl py-8" style="font-family:'Russo One', sans-serif;">
+                    Are you under attack?
+                    <br />
+                    <span class="text-2xl text-[#a09faf]">Just fill out the required information in the form.</span>
+                  </h3>
+                </div>
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    
+                    <div class="container">
+                        <p class="input-group mb-3" data-id="name" data-type="input">
+                            
+                            <input type="text" class="form-control text-white home_footer_input border-0 shadow-none"  id="name"  name="name" placeholder="Full Name" required>
+                            <span class="input-group-text home_footer_input border-0 text-black" id="basic-addon2"><i class="bi bi-person"></i></span>
+                    
+                        </p>
+                        <p class="input-group mb-3" data-id="email" data-type="email">
+                         
+                            <input type="email" class="form-control text-white home_footer_input border-0 shadow-none" id="email"  name="email" placeholder="Email Address" required>
+                            <span class="input-group-text home_footer_input border-0 text-black" id="basic-addon2"><i class="bi bi-envelope"></i></span>
+                    
+                        </p>
+                        <p class="input-group mb-3" data-id="company" data-type="input">
+                        
+                            <input type="text" class="form-control text-white home_footer_input border-0 shadow-none" id="company"  name="company" placeholder="Company" required>
+                            <span class="input-group-text home_footer_input border-0 text-black" id="basic-addon2"><i class="bi bi-briefcase"></i></span>
+                            
+                        </p>
+                        <p class="input-group mb-3" data-id="phone" data-type="input">
+                            
+                            <input type="text" class="form-control text-white home_footer_input border-0 shadow-none" id="phone"  name="phone" placeholder="1234-567-890" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+                            <span class="input-group-text home_footer_input border-0 text-black" id="basic-addon2"><i class="bi bi-phone"></i></span>
+                        </p>
+                        <p class="input-group mb-3" data-id="message" data-type="text">
+                            <textarea id="message" class="form-control home_footer_input border-0 shadow-none" class="et_pb_contact_message input" name="message" placeholder="Message" required></textarea>
+                            <span class="input-group-text home_footer_input border-0 text-black" id="basic-addon2"><i class="bi bi-chat-dots"></i></span>
+
+                        </p>
+                        <!-- <div class="g-recaptcha" data-sitekey="6LfvezsqAAAAAEgAoEGvHfTrbJrOIfijoMnDQuNV"></div> -->
+                        <div class="text-end">
+                            <button type="submit" id="submitBtn" class="underBtn" name="et_builder_submit_button" onclick="sendMail()">Submit</button>
+                        </div>
+                    </div>
+                    
+                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                    <script>
+                        (function () {
+                            emailjs.init("84PWeJiI_J5HBNRIv"); // Initialize EmailJS with the public key
+                        })();
+                    </script>
+                    <script src="./CSS_new/js/email.js"></script>
+                </div>
+                </div>
+                
         </div>
       </section>
       
@@ -368,7 +437,7 @@
       </section>
   
     </div>
-    <div data-tf-sidetab="UyWUMXsL" data-tf-opacity="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-button-text="Zero Cost Assessment" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+    <!-- <div data-tf-sidetab="UyWUMXsL" data-tf-opacity="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-button-text="Zero Cost Assessment" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script> -->
 </footer>
     <!-- Footer -->
     <footer class="footer style-7" style="background-color: rgb(0, 1, 65);">
@@ -464,7 +533,7 @@
           </div>
       </div>
   </div>
-  <div data-tf-sidetab="UyWUMXsL" data-tf-opacity="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-button-text="Zero Cost Assessment" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+  <!-- <div data-tf-sidetab="UyWUMXsL" data-tf-opacity="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-button-text="Zero Cost Assessment" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script> -->
 </footer>
   <!-- End Footer -->
     <a id="scroll-top"></a>
@@ -479,7 +548,9 @@
     <script>
         AOS.init();
       </script>
-
+      <script src="app/js/app.js"></script>
+      <script src="app/js/count-down.js"></script>
+      <script src="app/js/aos.js"></script>
       <script>
         var swiper = new Swiper('.swiper-partner-2 .swiper-container', {
             slidesPerView: 'auto', // Adjust this based on your design
