@@ -9,7 +9,60 @@
   font-style: normal;
   font-display: block;
 }
-
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+.close {
+  color: #121111;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#emailInput {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #050505;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #45a049;
+}
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -24,30 +77,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.underBtn{
-  background-color: #af4c93; /* Green background */
-  border: none;              /* Remove borders */
-  color: white;              /* White text */
-  padding: 5px 10px;        /* Padding */
-  text-align: center;        /* Centered text */    /* Remove underline */
-  display: inline-block;     /* Get it to line up */
-  font-size: 16px;           /* Font size */
-  margin-top: 4px;           /* Small margins */
-  cursor: pointer;           /* Pointer/hand icon */
-  border-radius: 5px;        /* Rounded corners */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
-}
 
-/* Hover effect */
-.underBtn:hover {
-  background-color: #933176; /* Darker green */
-  transform: translateY(-2px); /* Slight lift */
-}
-
-/* Active effect */
-.underBtn:active {
-  transform: translateY(1px); /* Pressed down effect */
-}
 .icon-ico-adobe:before {
   content: "\e957";
   color: #fff;
@@ -1364,9 +1394,6 @@
   color: rgb(255, 51, 0); /* Text color */
   padding: 10px;
 }
-
-
-
 #header_main {
   display: flex;
   flex-direction: column;
