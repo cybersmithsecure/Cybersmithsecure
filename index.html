@@ -7,32 +7,32 @@
     <title>CyberSmithSECURE | Art of Cyber Security, Perfected</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="app/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="app/dist/app.css">
-    <link rel="stylesheet" href="app/dist/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./app/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/dist/app.css">
+    <link rel="stylesheet" href="./app/dist/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <link href="app/dist/aos.css" rel="stylesheet">
     <!-- end Styles -->
-
+    
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="assets/images/logo/outline.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/outline.png">
-
+    <link rel="shortcut icon" href="./assets/images/logo/outline.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/images/logo/outline.png">
+    <script src="./app/js/verification.js"></script>
 </head>
 <body class="home-main header-fixed" data-magic-cursor="show">
     
     <!-- Header -->
 
  <header id="header_main" class="header" >
-    <div class="container" >
-        <div class="row">
+    <div class="head-container" >
+        <div class="row" >
             <div class="col-12" >
-                <button class="underBtn"><a href="./contact-us.html"><span><strong>Under Attack?</strong></span></a></button>
+                <a href="./contact-us.html"><span><strong>Under Attack?</strong></span></a>
             </div>
         </div>
     </div>
         
-        <div class="container">
+        <div class="head-container">
             <div class="row">
                 <div class="col-12">
                     <div class="header__body">
@@ -50,22 +50,19 @@
                                 <ul id="menu-primary-menu" class="menu">
                                     <li class="menu-item current-menu-item "> <a href="/">Home</a> </li>
                                     <li class="menu-item ">
-                                        <a href="about-us">About Us</a>
+                                        <a href="./about-us.html">About Us</a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a href="services">Services</a>
+                                    <li class="menu-item   ">
+                                        <a href="./services.html">Services</a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a href="#">Blog </a>
+                                    <li class="menu-item ">
+                                        <a href="./Pricing.html">Pricing</a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a href="./CSS_new/FSVI.html">FSVI </a>
-                                    </li>                  
+                                                        
                                     
                                 </ul>
                             </nav>                            
-                            <div class="mobile-button"><span></span></div>
-                            
+                            <div class="mobile-button"><span></span></div> 
                         </div>
                     </div>
                 </div>
@@ -86,7 +83,7 @@
                         <p class="desc">Unlock the Power of Clarity! Discover how our Continual Cyber Resilience as a Service Program empowers executives to effortlessly articulate security concerns to the board. Take a step towards streamlined communication and fortified cybersecurity. 
                         </p>
                         <div class="button">
-                            <a class="btn-action style-5" href="./CSS_new/index.html#footer">
+                            <a class="btn-action style-5" data-tf-popup="UyWUMXsL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-medium="snippet" >
                                 <span >Zero Cost Assessment</span>
                             </a>
                             <a class="btn-action-outline style-3" href="services">
@@ -591,7 +588,7 @@
         <div class="row">
             <div class="block-text">
                 <h2 class="title">Securing More Than $400 Million In Assets</h2>
-                <p class="text fs-20">From FORTUNE500 companies and unicorns to small-scale businesses, we have helped secure companies from all types of industries like automobile, medical, insurance, real estate, and much more. </p>
+                <p class="text fs-20">From Fortune 500 companies and unicorns to small-scale businesses, we have helped secure companies from all types of industries like automobile, medical, insurance, real estate, and much more. </p>
                 
             </div>
             <div class="col-md-12">
@@ -687,7 +684,7 @@
             <div class="col-xl-5 col-md-12">
                 <div class="block-text">
                     <h2 class="title">Securing More Than $400 Million In Assets</h2>
-                    <p class="text fs-20">From FORTUNE500 and Unicorn companies to small scale business, We have helped secure companies from all types of industries like automobile, medical, insurance, real estate, and much more. </p>
+                    <p class="text fs-20">From FORTURE500 and Unicorn companies to small scale business, We have helped secure companies from all types of industries like automobile, medical, insurance, real estate, and much more. </p>
                     <a href="#" class="btn-action" data-tf-popup="UyWUMXsL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-medium="snippet"><span>Get in Touch</span></a>
                 </div>
             </div>
@@ -736,8 +733,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block-text center">
-                    <h3>Capability Statement</h3>
-                    <p class="mt-12">Download the capability statement to understand how we help our clients through various <br> security services.</p>
+                    <h3 style="color: rgb(248, 245, 245);">Capability Statement</h3>
+                    <p style="color: rgb(248, 237, 237);" class="mt-12">Download the capability statement to understand how we help our clients through various <br> security services.</p>
                 </div>
             </div>
         </div>
@@ -749,9 +746,24 @@
                         <a class="fs-16" href="assets/capability_statement.pdf">Managed Security Services</a>
                     </div>
                     <div class="content">
-                        <a href="assets/capability_statement.pdf" class="title">Managed Security Services</a>
-                        <a href="assets/capability_statement.pdf" class="download"><span class="icon-Group"></span>PDF</a>
+                        <!-- Updated link to open the modal instead of direct download -->
+                        <a href="#" class="title" onclick="openModal()">Managed Security Services</a>
+                        <a href="#" class="download" onclick="openModal()"><span class="icon-Group"></span>PDF</a>
                     </div>
+                
+                    <!-- Modal -->
+                    <div id="emailModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2 style="color: rgb(9, 9, 9);">Download PDF</h2>
+                            <p style="color: rgb(3, 3, 3);">Please enter your company email to download the PDF:</p>
+                            <input type="email" id="emailInput" placeholder="your.email@company.com">
+                            <p id="errorMessage" class="error">Please enter a valid company email (no public domains like Gmail).</p>
+                            <button class="btn" onclick="validateEmail()">Submit</button>
+                        </div>
+                    </div>
+                
+                    
                 </div>
             </div>
             <div class="col-xl-3 col-md-6">
@@ -761,8 +773,21 @@
                         <a class="fs-16" href="assets/capability_statement.pdf">VCISO</a>
                     </div>
                     <div class="content">
-                        <a href="assets/capability_statement.pdf" class="title">vCISO <br><br><br></a>
-                        <a href="assets/capability_statement.pdf" class="download"><span class="icon-Group"></span>PDF</a>
+                        <!-- Updated link to open the modal instead of direct download -->
+                        <a href="#" class="title" onclick="openModal()">VCISO</a>
+                        <a href="#" class="download" onclick="openModal()"><span class="icon-Group"></span>PDF</a>
+                    </div>
+                
+                    <!-- Modal -->
+                    <div id="emailModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Download PDF</h2>
+                            <p>Please enter your company email to download the PDF:</p>
+                            <input type="email" id="emailInput" placeholder="your.email@company.com">
+                            <p id="errorMessage" class="error">Please enter a valid company email (no public domains like Gmail).</p>
+                            <button class="btn" onclick="validateEmail()">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -773,8 +798,21 @@
                         <a class="fs-16" href="assets/capability_statement.pdf">Red Teaming</a>
                     </div>
                     <div class="content">
-                        <a href="assets/capability_statement.pdf" class="title">Red Teaming <br><br><br></a>
-                        <a href="assets/capability_statement.pdf" class="download"><span class="icon-Group"></span>PDF</a>
+                        <!-- Updated link to open the modal instead of direct download -->
+                        <a href="#" class="title" onclick="openModal()">Red Teaming</a>
+                        <a href="#" class="download" onclick="openModal()"><span class="icon-Group"></span>PDF</a>
+                    </div>
+                
+                    <!-- Modal -->
+                    <div id="emailModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Download PDF</h2>
+                            <p>Please enter your company email to download the PDF:</p>
+                            <input type="email" id="emailInput" placeholder="your.email@company.com">
+                            <p id="errorMessage" class="error">Please enter a valid company email (no public domains like Gmail).</p>
+                            <button class="btn" onclick="validateEmail()">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -785,8 +823,21 @@
                         <a class="fs-16" href="assets/capability_statement.pdf">Governance, Risk & Compliance</a>
                     </div>
                     <div class="content">
-                        <a href="assets/capability_statement.pdf" class="title">Governance, Risk & Compliance</a>
-                        <a href="assets/capability_statement.pdf" class="download"><span class="icon-Group"></span>PDF</a>
+                        <!-- Updated link to open the modal instead of direct download -->
+                        <a href="#" class="title" onclick="openModal()">Governance, Risk & Compliance</a>
+                        <a href="#" class="download" onclick="openModal()"><span class="icon-Group"></span>PDF</a>
+                    </div>
+                
+                    <!-- Modal -->
+                    <div id="emailModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <h2>Download PDF</h2>
+                            <p>Please enter your company email to download the PDF:</p>
+                            <input type="email" id="emailInput" placeholder="your.email@company.com">
+                            <p id="errorMessage" class="error">Please enter a valid company email (no public domains like Gmail).</p>
+                            <button class="btn" onclick="validateEmail()">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -953,8 +1004,6 @@
                     <p><strong>Kingdom of Saudi Arabia <br></strong> Al Khobar 31952, P.O. Box 4607 <br><span class="icon-Calling"></span>  +91 98221 01337</p>
                     <p><strong>UAE <br></strong> 308 Indigo Tower, Cluster D, Jumeirah Lake Towers, Dubai P.O Box Address- 112965<br><span class="icon-Calling"></span> +91 98221 01337</p>
 
-
-                    
                     </div>
                 
                 
@@ -975,7 +1024,7 @@
             </div>
         </div>
     </div>
-    <!-- <div data-tf-sidetab="UyWUMXsL" data-tf-opacity="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-button-text="Zero Cost Assessment" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script> -->
+    <div data-tf-sidetab="UyWUMXsL" data-tf-opacity="100" data-tf-iframe-props="title=Zero Cost Assessment" data-tf-transitive-search-params data-tf-button-color="#0445AF" data-tf-button-text="Zero Cost Assessment" data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
 </footer>
 
     <script src="app/js/mouse.js"></script>
@@ -989,9 +1038,9 @@
     <script>
         AOS.init();
     </script>
-    <script src="app/js/app.js"></script>
-    <script src="app/js/count-down.js"></script>
-    <script src="app/js/aos.js"></script>
+    <script src="./app/js/app.js"></script>
+    <script src="./app/js/count-down.js"></script>
+    <script src="./app/js/aos.js"></script>
     <script>
         AOS.init();
       </script>
