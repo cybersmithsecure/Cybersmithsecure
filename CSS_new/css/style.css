@@ -3,19 +3,16 @@
   * {
       font-family: 'Poppins', sans-serif !important;
   }
-
-  body {
-      background-color: black;
-  }
-
+body{
+    background-color: #050231;
+}
   html {
       scroll-behavior: smooth;
   }
 
   nav {
-      position: sticky !important;
+      /* position: sticky !important; */
       top: 0 !important;
-      background-color: black !important;
       z-index: 1;
   }
 
@@ -31,7 +28,6 @@
   .navLinks:hover {
       color: rgba(255, 255, 255, 0.60);
       font-size: 16px;
-      font-style: normal;
       font-weight: 400;
       line-height: normal;
   }
@@ -48,7 +44,6 @@
   }
 
   .heros_container {
-      margin-top: 100px;
       background-image: url("../images/square\ Vector.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -264,12 +259,15 @@
   .group_backgroundImgD {
       background: url(../images/group_d_img.svg), lightgray 50% / cover no-repeat;
   }
-
-  .homeFaq_container {
-      margin-top: 100px;
+  #home{
+    background:url("../../assets/images/background/banner-top-6.jpg");
+  }
+  #learnMore{
+    background:url("../../assets/images/background/bg-choose.jpg")
   }
 
   .homeFaq_heading {
+    
       color: #FFF;
       font-size: 40px;
       font-style: normal;
@@ -313,7 +311,7 @@
 
   .home_footer {
       height: 867px;
-      background-image: url(../images/HomeFooterImg.svg);
+      background-image: url(./../../assets/images/background/platform-bg.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -359,31 +357,6 @@
       width: 944px;
       margin-top: 150px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   /* Extra large devices (large desktops, 1200px) */
   @media (max-width: 1200px) {}
