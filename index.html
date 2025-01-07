@@ -12,13 +12,76 @@
     <link rel="stylesheet" href="app/dist/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link href="app/dist/aos.css" rel="stylesheet">
-    <!-- end Styles -->
-
-    <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/outline.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/outline.png">
     <script src="./app/js/verification.js"></script>
-
+    <style>
+        .section {
+            padding: 60px 20px;
+            background: linear-gradient(to right, #b057c7,#021b53, #0c0831);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(230, 167, 167, 0.2);
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .faq {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-item button {
+            background: #fff;
+            color: #1a73e8;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .faq-item button:hover {
+            background: #e3f2fd;
+        }
+        .faq-item button:focus {
+            outline: none;
+        }
+        .faq-item button.active {
+            background: #bbdefb;
+            color: #0d47a1;
+        }
+        .faq-content {
+            display: none;
+            padding: 15px 20px;
+            background: whitesmoke;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body class="home-main header-fixed" data-magic-cursor="show">
     
@@ -61,8 +124,7 @@
                                     </li>
                                     <li class="menu-item">
                                         <a href="./CSS_new/FSVI.html">FSVI </a>
-                                    </li>                  
-                                    
+                                    </li>    
                                 </ul>
                             </nav>                            
                             <div class="mobile-button"><span></span></div>
@@ -73,10 +135,6 @@
             </div>
         </div>
     </header>
-    
-    <!-- end Header -->
-
-    <!-- Banner Top -->
     <section class="banner-top style-5">
         <div class="container">
             <div class="row">
@@ -849,6 +907,61 @@
 </section>
 
 
+<section>
+<div class="section">
+    
+    <div style="display: flex;">
+        
+        <div class="image-container">
+            <img src="./assets/images/logo/images.jpg" alt="CER-IN Empanelment" width="400" height="200">
+        </div>
+        <div class="container">
+            <h4>
+                We are proud to announce our CER-IN empanelment. As a trusted organization, we are dedicated to enhancing cybersecurity standards and providing comprehensive security audits and assessments.
+            </h4>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="faq-item">
+            <button onclick="toggleFAQ(this)">What is CER-IN Empanelment?</button>
+            <div class="faq-content">
+                <p>CER-IN empanelment ensures that only competent organizations perform security audits, maintaining high cybersecurity standards across sectors.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button onclick="toggleFAQ(this)">Why is it important?</button>
+            <div class="faq-content">
+                <p>It enhances an organization’s security posture, ensures regulatory compliance, and builds trust with stakeholders.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button onclick="toggleFAQ(this)">What are the benefits?</button>
+            <div class="faq-content">
+                <p>Engaging CERT-In empanelled auditors helps identify vulnerabilities, strengthens security, and provides a competitive edge.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        const isActive = button.classList.contains('active');
+
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-item button').forEach(btn => {
+            btn.classList.remove('active');
+            btn.nextElementSibling.style.display = 'none';
+        });
+
+        // Toggle the current FAQ item
+        if (!isActive) {
+            button.classList.add('active');
+            content.style.display = 'block';
+        }
+    }
+</script>
+</section>
 <div class="container s2 certification">
     <div class="row">
         <div class="col-12">
@@ -930,13 +1043,21 @@
                             
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="team-box-6">
+                            <div class="team-box__image" style="margin: 10px 0;" >
+                                <a href="#"><img src="assets/images/logo/images.jpg" alt="ICOLand"></a>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div formsappId="64fecc3e39070561e86e8992"></div>
-<footer class="footer style-7" style="background-color: rgb(0, 1, 65);">
+<footer class="footer style-7" style="background-color: #0c0831;">
         <a id="scroll-top"></a>
     <div class="footer__top" >
         <div class="container">
@@ -948,7 +1069,7 @@
                     </h6>
                     <p>
                     Unlock cybersecurity insights with our Zero Cost Assessment Consultation for CIOs, CTOs, and CEOs. Experience our capabilities through Proof of Concepts (PoCs).</p>
-                    <p><strong>Contact us today!</strong> <br><span class="icon-message"></span></i> contact@cybersmithsecure.com</p>
+                    <p><strong>Contact us today!</strong> <br><span class="icon-message"></span></i> support@cybersmithsecure.com</p>
                     <p><strong>India (HQ)<br></strong>Nanaji Apts, Umargothan, Virar West, Mumbai<br><span class="icon-Calling"></span> +91 98221 01337</p>
                     
                 </div>
@@ -1022,9 +1143,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <img src="assets/images/layout/startupindia.png" width="250px" alt="Startup India Certified">
+                    <img src="assets/images/logo/cert-in-withoutbg.png" width="250px" height="100px" alt="CERT-IN Empanelled Security Auditor">
+                    
                 </div>
                 <div class="col-md-6">
-                    <p>CyberSmithSECURE 2023 - ALL rights reserved</p>
+                    <p>CyberSmithSECURE 2025 - ALL rights reserved</p>
                 </div>
             </div>
         </div>
