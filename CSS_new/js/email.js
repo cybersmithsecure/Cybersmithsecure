@@ -37,7 +37,9 @@ function sendMail() {
             messageInput.value = "";
 
             console.log("Response:", res);
-            alert("Message sent successfully");
+            alert("Thank you for your info! The PDF will now download.");
+            window.location.href = "./assets/capability_statement.pdf";
+            
         })
         .catch((err) => {
             console.error("Error:", err);
